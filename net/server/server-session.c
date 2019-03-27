@@ -131,7 +131,7 @@ static int init_mysql_database (CcnetSession *session)
     char *host, *user, *passwd, *db, *unix_socket, *charset;
     int port;
     gboolean use_ssl = FALSE;
-    gboolean create_tables = TRUE;
+    gboolean create_tables = FALSE;
     int max_connections = 0;
 
     host = ccnet_key_file_get_string (session->keyf, "Database", "HOST");
